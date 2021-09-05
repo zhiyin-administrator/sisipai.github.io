@@ -1,0 +1,98 @@
+.search-box {
+    position: absolute;
+    top: 320%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.fa-search {
+    text-decoration: none;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0%;
+    left: -42%;
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0;
+}
+
+.search-box:hover>.search-txt {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: #e5eecc;
+    left: 100%;
+}
+
+.bjys {
+    background-color: black;
+}
+
+.ztys {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my_ul1 li a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+}
+
+.my_ul1 li a:hover {
+    color: gold;
+}
+
+.navbar-default div div a:hover {
+    color: gold;
+}
+
+.navbar-default div div a {
+    color: white;
+}
+
+.navbar-default div div a:active {
+    color: red;
+}
+
+.dtsz-nav {
+    width: 70%;
+    margin-left: auto;
+    background-color: #e8ebe8;
+    transition: width 0.4s;
+}
+
+.dtsz-nav:hover {
+    width: 100%;
+}
