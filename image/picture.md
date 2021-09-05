@@ -1,1 +1,0 @@
-![tupian](https://github.com/zhiyin-administrator/sisipai.github.io/upload/master/image)
