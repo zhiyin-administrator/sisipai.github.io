@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/touxiang.css">
+
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+
+    <style>
+        .bjys {
+            background-color: #030923;
+        }
+        /* #my_nav1 li a{
+            padding: 0;
+        } */
+        
+        #dongtai1 {
+            height: 100px;
+            width: 100%;
+            background: url(../image/wuxianpu.png);
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        
+        #dongtai_txt1 {
+            z-index: 1;
+            background-position: center top;
+            background-size: cover;
+        }
+        
+        #dongtai_txt1:after {
+            content: '1';
+            position: absolute;
+            top: 18%;
+            left: 1%;
+            right: 0;
+            bottom: 0;
+            height: 27%;
+            width: 98%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 0;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(6px);
+        }
+        
+        #dongtai2 {
+            height: 100px;
+            width: 100%;
+            background: url(../image/wuxianpu.png);
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        
+        #dongtai_txt2 {
+            z-index: 1;
+            background-position: center top;
+            background-size: cover;
+        }
+        
+        #dongtai_txt2:after {
+            content: '2';
+            position: absolute;
+            top: 45%;
+            left: 1%;
+            right: 0;
+            bottom: 0;
+            height: 27%;
+            width: 98%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 0;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(6px);
+        }
+        
+        #dongtai3 {
+            height: 100px;
+            width: 100%;
+            background: url(../image/wuxianpu.png);
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        
+        #dongtai_txt3 {
+            z-index: 1;
+            background-position: center top;
+            background-size: cover;
+        }
+        
+        #dongtai_txt3:after {
+            content: '3';
+            position: absolute;
+            top: 74%;
+            left: 1%;
+            right: 0;
+            bottom: 0;
+            height: 28%;
+            width: 98%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 0;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(6px);
+        }
+    </style>
+
+    <title>头像详情</title>
+</head>
+
+<body class="bjys">
+    <div class="container" style="background-color: #281f1d;text-align: center;">
+        <img src="../image/DIY_bg_image.jpg" alt="" style="width: 80%;height: 200px">
+    </div>
+    <div class="container visible-xs" style="background-color: #281f1d;">
+        <div class='col-xs-6'></div>
+        <div class='col-xs-3 ' style="top: -20px;">
+            <img src="../image/touxiang.jpg" alt="" class="img-circle" height=100% width=100%>
+        </div>
+    </div>
+    <div class="container" style="background-color: #281f1d;text-align: center;">
+        <div class='col-lg-4 col-md-3 col-sm-3  hidden-xs'></div>
+        <div class='col-lg-2 col-md-3 col-sm-3 col-xs-12 '>
+            <!-- <div class="visible-xs col-xs-1"></div> -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-5 " style="background-color: #fefe3b;margin: 10px;height: 40px">
+                我是头衔
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-5" style="background-color: #fefe3b;margin: 10px;height: 40px">
+                我是头衔
+            </div>
+        </div>
+        <!-- <div class='visible-xs col-xs-2 '></div> -->
+        <div class='col-lg-2 col-md-3 col-sm-3 col-xs-12 '>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-5 " style="background-color: #fefe3b;margin: 10px;height: 40px">
+                我是头衔
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-5 " style="background-color: #fefe3b;margin: 10px;height: 40px">
+                我是头衔
+            </div>
+        </div>
+        <div class='col-lg-1 hidden-md col-sm-1  hidden-xs'></div>
+        <div class='col-lg-2 col-md-2 col-sm-2  hidden-xs'>
+            <div class='col-lg-8 col-md-10 col-sm-12  hidden-xs' style="top: -20px;">
+                <img src="../image/touxiang.jpg" alt="" class="img-circle" height=100% width=100%>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="height: 20px;"></div>
+    <div class="container" style="background-color: #281f1d;">
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" style="background-color: #145b7d;">
+                <div class="container-fluid">
+                    <div>
+                        <ul class="nav navbar-nav" id='my_nav1' style="width: 100%;">
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 active"><a href="#">动态</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="#">提问</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="#">回答</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="#">专栏</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="#">收藏</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <a href="#"></a>
+                            </li>
+                            <!-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Java
+                                <b class="caret"></b>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">jmeter</a></li>
+                                    <li><a href="#">EJB</a></li>
+                                    <li><a href="#">Jasper Report</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">分离的链接</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">另一个分离的链接</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id='dongtai1'>
+                <div id='dongtai_txt1'>
+                    <h3 style="position:absolute; top: 21%;left: 12%; color:black;z-index: 5;">我是标题我是标题我是标题我是标题</h3>
+                </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div id='dongtai2'>
+                <div id='dongtai_txt2'>
+                    <h3 style="position:absolute; top: 49%;left: 12%; color:black;z-index: 5;">我是标题我是标题我是标题我是标题</h3>
+                </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div id='dongtai3'>
+                <div id='dongtai_txt3'>
+                    <h3 style="position:absolute; top: 77%;left: 12%; color:black;z-index: 5;">我是标题我是标题我是标题我是标题</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class='col-sm-1 visible-sm col-xs-3 visible-xs'></div>
+        <div class="col-lg-3 col-md-3 col-sm-10 col-xs-6 ">
+            <div class="col-lg-12 col-md-12 col-sm-5 col-xs-12" style="height: 66px;background-color: #f15a22;text-align: center;">
+                <h4>
+                    成就
+                </h4>
+            </div>
+            <div class="col-sm-2 visible-sm"></div>
+            <div class="col-lg-12 col-md-12 col-sm-5 col-xs-12" style="height: 320px;background-color: #009ad6;text-align: center;">
+                <h5>
+                    共享琴房的租聘记录
+                </h5>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
