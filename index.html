@@ -13,22 +13,25 @@
 
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
 
-    <title>首页</title>
+
+    <title>四四拍首页</title>
 </head>
 
-<body class="bjys">
-    <div class="container ">
-        <nav class="navbar navbar-default bjys" role="navigation">
-            <div class="active col-lg-2 col-md-4 col-sm-4 col-xs-4">
-                <div style="line-height: 50px;"><a href="" style="text-decoration: none;">首页（论坛）</a></div>
+<body>
+    <div class="container-fluid " style="background: linear-gradient(#c9c9c9, #c9c9c9) no-repeat;background-size: 100% 2px; background-position: 0px 89px;">
+        <div class="col-lg-2 col-md-2 col-sm-7 col-xs-9" style="margin-top: 15px;">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="image/logo.png" alt="" style="height: 60px;">
             </div>
-            <div class="col-lg-1 col-md-4 col-sm-4 col-xs-4 ">
-                <div style="line-height: 50px;"><a href="" style="text-decoration: none;">曲库</a></div>
-            </div>
-            <div class="col-lg-1 col-md-4 col-sm-4 col-xs-4 ">
-                <div style="line-height: 50px;"><a href="" style="text-decoration: none;">等您解答</a></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+            <!-- <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="padding: 0 0 0 12%;">
+                <h2 style="color: #9e9e9e;">四四拍</h2>
+            </div> -->
+        </div>
+        <div class=" col-sm-4 visible-sm visible-xs col-xs-3" style="margin-top: 20px;text-align: center;margin-top: 25px;">
+            <a href="touxiang.html"><img src=" image/touxiang.jpg" alt="" class="img-circle" height=50px width=50px></a>
+        </div>
+        <div class="visible-lg visible-md">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="margin-top: 20px;">
                 <form class="navbar-form form-group visible-lg visible-md">
                     <div class="search-box">
                         <input class="search-txt" type="text" placeholder="搜索" />
@@ -37,81 +40,137 @@
                         </a>
                     </div>
                 </form>
-                <form class="navbar-form form-group visible-sm visible-xs">
-                    <input class="form-control col-md-2" type="text" placeholder="搜索栏">
-                    <input class=" btn btn-primary col-md-3" type="submit" value="提问">
-                </form>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-9">
-                <div style="float: right;line-height: 50px;"><a href="" style="text-decoration: none;">系统消息</a></div>
-            </div>
-            <div class="col-lg-1 col-md-3 col-sm-3 col-xs-3 ">
-                <a href="touxiang.html"><img src=" image/touxiang.jpg" alt="" class="img-circle" height=50px width=50px></a>
-            </div>
-        </nav>
-
-
-    </div>
-    <div class="container">
-
-    </div>
-    <div class="container">
-        <div class='col-lg-1 col-md-1 col-xs-1'></div>
-        <div class='col-lg-4 col-md-5 col-sm-5 col-xs-12 ztys'>
-            <div style="text-align:center;padding: 2% 2%;background-color:gold;margin-bottom: 2%;">
-                <img src=" image/suoluetu.jpg" style="height:180px;width:100%;display: block">
-                <h3 style="background-color: black;margin: 0;">我是标题</h3>
-            </div>
-            <div style="text-align:center;padding: 2% 2%;background-color:gold;margin-bottom: 2%;">
-                <img src=" image/suoluetu.jpg" style="height:180px;width:100%;display: block">
-                <h3 style="background-color: black;margin: 0;">我是标题</h3>
-            </div>
-        </div>
-        <div class='col-lg-4 col-md-5 col-sm-5 col-xs-12 ztys'>
-            <div style="text-align:center;padding: 2% 2%;background-color:gold;margin-bottom: 2%;">
-                <img src=" image/suoluetu.jpg" style="height:180px;width:100%;display: block">
-                <h3 style="background-color: black;margin: 0;">我是标题</h3>
-            </div>
-            <div style="text-align:center;padding: 2% 2%;background-color:gold;margin-bottom: 2%;">
-                <img src=" image/suoluetu.jpg" style="height:180px;width:100%;display: block">
-                <h3 style="background-color: black;margin: 0;">我是标题</h3>
-            </div>
-        </div>
-        <div class='col-lg-3 col-md-6 col-sm-6 col-xs-12' id='sz-nav'>
-            <div class="row">
-                <div class="nav">
-                    <ul style="padding: 0;margin: 0;list-style: none;" class="my_ul1">
-                        <li style="text-align: center;" class='dtsz-nav' @mouseover="alt_Nav_index(1)">
-                            <a href="#" style="line-height: 50px;"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp; 推荐</a>
-                        </li>
-                        <li style="text-align: center;" class='dtsz-nav'>
-                            <a href="#" style="line-height: 50px;"><span class="glyphicon glyphicon-plus"></span>&nbsp; 关注</a>
-                        </li>
-                        <li style="text-align: center;" class='dtsz-nav'>
-                            <a href="#" style="line-height: 50px;"><span class="glyphicon glyphicon-expand"></span>&nbsp; 视频</a>
-                        </li>
-                        <li style="text-align: center;">
-                            <a href="#" style="height:200px;width:100%;display: block">
-                                <img src=" image/Advertise.jpg" style="height:180px;width:100%;display: block"> 我是广告
-                            </a>
-                        </li>
-                        <li style="text-align: center;">
-                            <a href="#" style="height:200px;width:100%;display: block">
-                                <img src=" image/Advertise.jpg" style="height:180px;width:100%;display: block"> 我是广告
-                            </a>
-                        </li>
-                        <li><a href="#" style="line-height: 50px;"><span class="glyphicon glyphicon-star-empty"></span>&nbsp; 个人中心</a></li>
-                    </ul>
+            <div class="col-lg-1 col-md-1 col-sm-4 col-xs-12 " style="margin-top: 20px;padding: 0;">
+                <div style="background-color: #990001;border-radius: 30px; height: 50px;color: white;text-align: center;width: 100px;">
+                    <p style="line-height:  50px;;">提问</p>
                 </div>
             </div>
+        </div>
+        <div class="col-lg-1 visible-lg " style="margin-top: 20px;">
+
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 " style="margin-top: 20px;text-align: center;">
+            <h4 style="background: linear-gradient(#b13e4d, #b13e4d) no-repeat;background-size: 22% 3px;; background-position: 50% 50%;height: 50px;">主页</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 hidden-xs" style="margin-top: 20px;text-align: center;color: #afafaf;height: 70px;">
+            <h4>曲库</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 visible-xs" style="margin-top: 20px;text-align: center;color: #afafaf;">
+            <h4>曲库</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 " style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
+            <h4>为您解答</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 " style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
+            <h4>系统消息</h4>
+        </div>
+        <div class="col-lg-2 col-md-2 visible-lg visible-md" style="margin-top: 20px;text-align: center;margin-top: 10px;">
+            <a href="touxiang.html"><img src=" image/touxiang.jpg" alt="" class="img-circle" height=50px width=50px></a>
+        </div>
+        <div class="visible-sm visible-xs">
+            <div class="visible-sm col-sm-1 col-xs-12"></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="margin-top: 20px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="visible-sm visible-xs col-sm-2 col-xs-12"></div> -->
+            <div class="col-lg-1 col-md-1 col-sm-4 col-xs-12" style="margin-top: 20px;padding: 0;">
+                <div style="background-color: #990001;border-radius: 30px; height: 50px;color: white;text-align: center;width: 100px;margin-left: 33%;">
+                    <p style="line-height:50px;">提问</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="background-color: #f3f3f3;">
+        <div class="col-lg-2 col-md-1 col-sm-6 col-xs-12 " style="border-right:2px  solid #b7b7b7 ;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="height: 20px;"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id='left-top-nav'>
+                <div class='row' style="font-size: 30px; font-weight:600;color: #921a22;margin: 10% 0% 10% 0%;">分类</div>
+                <div style="font-size: 18px;background-color: #e5e5e5;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/fengge.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 风格
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;" class="left-top-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/shidai.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 时代
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;" class="left-top-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/zuozhe.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 作者
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;" class="left-top-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/guojia.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 国家
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="height: 2px;background-color: #dcdcdc;width: 100%;"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id='left-bottom-nav'>
+                <div class='row' style="font-size: 30px; font-weight:600;color: #921a22;margin: 10% 0% 10% 0%;">个人中心</div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 收藏夹
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 关注的问题
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 节拍器
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 调音器
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 帮助中心
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 设置
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-1 col-sm-6 col-xs-12 ">
 
         </div>
     </div>
-
-    <script src="首页Vue3.js"></script>
-    <script src="jquery.js "></script>
-    <!-- 包括所有已编译的插件 -->
-    <script src=" bootstrap-3.4.1-dist/js/bootstrap.min.js "></script>
 </body>
 
 </html>
