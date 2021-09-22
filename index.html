@@ -14,7 +14,11 @@
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
 
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <title>四四拍首页</title>
+
 </head>
 
 <body>
@@ -34,10 +38,14 @@
             <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="margin-top: 20px;">
                 <form class="navbar-form form-group visible-lg visible-md">
                     <div class="search-box">
-                        <input class="search-txt" type="text" placeholder="搜索" />
-                        <a class="search-btn" href="#">
-                            <i class="fas fa-search"></i>
+                        <input class="search-txt" type="text" placeholder="搜索" style="line-height: 190%;" />
+                        <a class="search-btn" href="#" style="text-decoration: none;">
+                            <div class="fas fa-search"></div>
                         </a>
+                        <!-- <input type="text" name="" id="" class="search-txt" placeholder="搜索" style="line-height: 190%;">
+                        <a class="search-btn" href="#" style="text-decoration: none; line-height: 190%;">
+                            <span class="fas fa-search"></span>
+                        </a> -->
                     </div>
                 </form>
             </div>
@@ -50,19 +58,19 @@
         <div class="col-lg-1 visible-lg " style="margin-top: 20px;">
 
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 " style="margin-top: 20px;text-align: center;">
-            <h4 style="background: linear-gradient(#b13e4d, #b13e4d) no-repeat;background-size: 22% 3px;; background-position: 50% 50%;height: 50px;">主页</h4>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 top-nav" style="margin-top: 20px;text-align: center;">
+            <h4 style="background: linear-gradient(#b13e4d, #b13e4d) no-repeat;background-size: 22% 3px; background-position: 50% 50%;height: 50px;">主页</h4>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 hidden-xs" style="margin-top: 20px;text-align: center;color: #afafaf;height: 70px;">
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 hidden-xs top-nav" style="margin-top: 20px;text-align: center;color: #afafaf;height: 70px;">
             <h4>曲库</h4>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 visible-xs" style="margin-top: 20px;text-align: center;color: #afafaf;">
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 visible-xs top-nav" style="margin-top: 20px;text-align: center;color: #afafaf;">
             <h4>曲库</h4>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 " style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 top-nav-0" style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
             <h4>为您解答</h4>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 " style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 top-nav-0" style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
             <h4>系统消息</h4>
         </div>
         <div class="col-lg-2 col-md-2 visible-lg visible-md" style="margin-top: 20px;text-align: center;margin-top: 10px;">
@@ -87,7 +95,7 @@
         </div>
     </div>
     <div class="container-fluid " style="background-color: #f3f3f3;">
-        <div class="col-lg-2 col-md-1 col-sm-6 col-xs-12 " style="border-right:2px  solid #b7b7b7 ;">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="border-right:2px  solid #b7b7b7 ;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="height: 20px;"></div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id='left-top-nav'>
                 <div class='row' style="font-size: 30px; font-weight:600;color: #921a22;margin: 10% 0% 10% 0%;">分类</div>
@@ -168,9 +176,97 @@
             </div>
         </div>
         <div class="col-lg-10 col-md-1 col-sm-6 col-xs-12 ">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 2%;">
+                <img src="image/sousuo.png" alt="" style="width: 92%">
+                <span style="margin: -100px;">
+                    <a href=""><img src="image/shiqu.png" alt="" style="width: 2.5%;"></a>
+                </span>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 2%;">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper1.png" alt="">
+                            <div style="background-color: white;opacity:.40">
+                                <div style="background: linear-gradient(#ebedec, #ebedec) no-repeat;background-size: 100% 2px; background-position: 0px 89px;">
+                                    <h4>我是标题我是标题我是标题我是标题</h4>
+                                </div>
+                                <div>
+                                    我是内容我是内容我是内容我是内容我是内容我是内容
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper2.png" alt="">
+                            <div style="background-color: white;opacity:.40">
+                                <div style="background: linear-gradient(#ebedec, #ebedec) no-repeat;background-size: 100% 2px; background-position: 0px 89px;">
+                                    <h4>我是标题我是标题我是标题我是标题</h4>
+                                </div>
+                                <div>
+                                    我是内容我是内容我是内容我是内容我是内容我是内容
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper3.png" alt="">
+                            <div style="background-color: white;opacity:.40">
+                                <div style="background: linear-gradient(#ebedec, #ebedec) no-repeat;background-size: 100% 2px; background-position: 0px 89px;">
+                                    <h4>我是标题我是标题我是标题我是标题</h4>
+                                </div>
+                                <div>
+                                    我是内容我是内容我是内容我是内容我是内容我是内容
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper4.png" alt="">
+                            <div style="background-color: white;opacity:.40">
+                                <div style="background: linear-gradient(#ebedec, #ebedec) no-repeat;background-size: 100% 2px; background-position: 0px 89px;">
+                                    <h4>我是标题我是标题我是标题我是标题</h4>
+                                </div>
+                                <div>
+                                    我是内容我是内容我是内容我是内容我是内容我是内容
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next" style="color: black;background-color:white;width: 4.5%;height: 12%;border-radius:50%;margin-left: 10%;"></div>
+                    <div class="swiper-button-prev" style="color: black;background-color:white;width: 4.5%;height: 12%;border-radius:50%"></div>
+                </div>
+            </div>
 
         </div>
     </div>
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- My Swiper's JS -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            freeMode: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
 </body>
 
 </html>
